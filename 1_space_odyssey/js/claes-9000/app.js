@@ -164,8 +164,11 @@ for (var i = 0; i <= responses.length; i++) {
     console.log(responses[i]);
   }
 }
-
 // write your code here, use the console log beneath
+for (var i = 0; i <= responses.length; i++) {
+  if (responses[i] === responses [3]) {
+  console.log(responses[i], "\u{1F6F8} Swoosh -> -> Ship is steered to safety!");}
+  } 
 // console.log("\u{1F6F8} Swoosh -> -> Ship is steered to safety!");
 
 /*
@@ -178,7 +181,7 @@ for (var i = 0; i <= responses.length; i++) {
 console.log('\u{1F47E} ALIENS SPACE CRAFT ENCROACHING::::::');
 
 // a.
-var enemyCraft = false;
+var enemyCraft = true;
 var photonLaser = true;
 var photonLaserEnabled = true;
 var bullets = 100;
@@ -222,6 +225,7 @@ if (enemyCraft && photonLaser && photonLaserEnabled) {
 console.log('\u{1F311} LUNAR LANDING:::::');
 
 // start coding here
+var lunarRadar = [true, 100, 100, 100]
 
 var lunarRadar = {
   isEnabled: undefined,
