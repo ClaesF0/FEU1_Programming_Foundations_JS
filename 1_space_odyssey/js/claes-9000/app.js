@@ -225,7 +225,7 @@ if (enemyCraft && photonLaser && photonLaserEnabled) {
 console.log('\u{1F311} LUNAR LANDING:::::');
 
 // start coding here
-var lunarRadar = [true, 100, 100, 100]
+
 
 var lunarRadar = {
   isEnabled: undefined,
@@ -234,28 +234,37 @@ var lunarRadar = {
   approachSpeed: undefined, // "ft per minute"
 };
 
+lunarRadar.isEnabled = true;
+lunarRadar.long = 10;
+lunarRadar.lat = 20;
+lunarRadar.approachSpeed = (200);
+
 // Level 1 convert this psuedocode to functioning code.
 
-/*
-IF lunar radar is enabled && lat is defined and long is defined
+
+if (
+  lunarRadar.isEnabled === true &&
+  lunarRadar.lat !== undefined && 
+  lunarRadar.long !== undefined
+  ) {
     console.log("\u{1F91F} looking good " + name + " we are making our descent, now entering approach speed");
-    IF approach speed is greater than or equal to 200ft per minute and approach speed is less than 299ft per minute
-      console.log("\u{269B} well done " + name + " we have touched down safely. Lets get some samples and get heck outta here!");
-    ELSE IF approach speed is greater than or equal to 300ft per minute
+    if (approach speed >= 200ft per minute and approach speed is less than 299ft per minute) {
+      console.log("\u{269B} well done " + name + " we have touched down safely. Lets get some samples and get heck outta here!");}
+    else if approach speed is greater than or equal to 300ft per minute
       console.log("\u{1F627} coming in hot " + name + " decrease pitch!");
-    ELSE IF approach speed is greater than or equal to 400ft per minute
+    else if approach speed is greater than or equal to 400ft per minute
       console.log("\u{1F627} coming in way too hot " + name + " decrease pitch!");
-    ELSE IF approach speed is greater than or equal to 500ft per minute
+    else if approach speed is greater than or equal to 500ft per minute
       console.log("\u{1F627} coming in way too hot " + name + " decrease pitch!");
-    ELSE IF approach speed is greater than or equal to 600ft per minute
+    else if approach speed is greater than or equal to 600ft per minute
       console.log("\u{1F627} coming in way too hot " + name + " decrease pitch!");
-    ELSE IF approach speed is less than or equal to 100ft per minute
+    else if approach speed is less than or equal to 100ft per minute
       console.log("\u{1F47D} hmmm need a bit more heat " + name + " lets increase pitch and we should have a smooth landing");
-    ELSE
+    else
       console.log('Please enter an approach speed');
-ELSE
+else
   console.log("\u{1F9F1}\u{1F9F1}\u{1F9F1}\u{1F9F1} " + name + " you went down like a ton of bricks, the wrecked remains of the lunar lander can still be seen from earth twinkling in the distance.");
-*/
+    }
 
 // Level 2 convert it to a switch statement.
 
